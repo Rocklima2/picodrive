@@ -251,7 +251,7 @@ else ifneq (,$(findstring rpi,$(platform)))
 	
 	ifneq (,$(findstring rpi1,$(platform)))
 	  CFLAGS += -marm -mfpu=vfp -mfloat-abi=hard -march=armv6j
-    else ifneq (,$(findstring rpi2,$(platform)))
+        else ifneq (,$(findstring rpi2,$(platform)))
 	  CFLAGS += -marm -mcpu=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard
 	else ifneq (,$(findstring rpi3,$(platform)))
 	  CFLAGS += -marm -mcpu=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard
